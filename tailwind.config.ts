@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import colors from 'tailwindcss/colors'
+
 export default <Partial<Config>>{
   darkMode: 'media',
   theme: {
@@ -36,7 +37,11 @@ export default <Partial<Config>>{
     //   gothic: ['Engravers Gothic', 'sans-serif'],
     // },
   },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+  plugins: [
+  require('@tailwindcss/typography'),
+  require('@tailwindcss/forms'),
+  require('@formkit/themes/tailwindcss'),
+  ],
   content: [
     `./components/**/*.{vue,js,ts}`,
     `./layouts/**/*.vue`,
@@ -47,5 +52,6 @@ export default <Partial<Config>>{
     `./app.{js,ts,vue}`,
     `./Error.{js,ts,vue}`,
     `./error.{js,ts,vue}`,
+  './tailwind-theme.js',
   ],
 }

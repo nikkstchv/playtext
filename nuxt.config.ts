@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     'tailwind-svg-icon',
     '@unlighthouse/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
+    '@formkit/nuxt',
   ],
 
   pinia: {
