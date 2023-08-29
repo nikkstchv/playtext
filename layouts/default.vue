@@ -2,6 +2,7 @@
   <main>
     <SeoKit />
     <OgImageScreenshot />
+    <TheHeader />
     <slot />
   </main>
   <ModalsContainer />
